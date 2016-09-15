@@ -1,0 +1,10 @@
+---
+- name: Creating {{ name }} user
+  user:
+      name={{ name }}
+      comment={{ comment }}
+      shell={{ shell }}
+      groups={{ groups }} 
+      append={{ append }}
+      password={{ password }}
+# tasks file for ansible-role-tiw-user

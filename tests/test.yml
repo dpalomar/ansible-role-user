@@ -1,0 +1,10 @@
+---
+- hosts: servers
+  remote_user: root
+  vars:
+  - name: myUser
+    shell: /bin/bash
+    groups: apache
+    password: *******
+    roles:
+      - { role: ansible-role-user}
